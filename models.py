@@ -19,7 +19,7 @@ class Cupcake(db.Model):
 
     rating = db.Column(db.Float, nullable=False)
 
-    image = db.Column(db.Text, nullable=False, server_default="https://thestayathomechef.com/wp-content/uploads/2017/12/Most-Amazing-Chocolate-Cupcakes-1-small.jpg")
+    image = db.Column(db.Text, nullable=False, default="https://thestayathomechef.com/wp-content/uploads/2017/12/Most-Amazing-Chocolate-Cupcakes-1-small.jpg")
 
     def serialize(self):
         """Returns a dict representation of Cupcake which we can turn into JSON"""
